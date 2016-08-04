@@ -6,13 +6,18 @@ import uiRouter from 'angular-ui-router';
 
 import AppComponent from './app.component';
 import Home from './home';
+import User_1 from './user'
+
 import Listing from './models/listing';
+import User_2 from './models/user'
 
 const root = angular
   .module('eyirbiyenbiApp', [
     Home,
+    User_1,
     uiRouter,
-    Listing
+    Listing,
+    User_2
   ])
   .config(($locationProvider, $urlRouterProvider) => {
     $locationProvider.html5Mode({

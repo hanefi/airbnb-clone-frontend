@@ -1,0 +1,20 @@
+<h1>Eyırbiyenbi Home</h1>
+
+<div class="users-container">
+  <div class="user-item"
+       ng-repeat="user in $ctrl.users">
+
+     <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+
+<!--     <div class="listing-item-capacity">
+      Bed Capacity: {{ listing.bed_capacity }}
+    </div>
+ -->
+<!--    <div>
+      Created: {{ listing.created_at | date }}
+    </div>
+ -->
+    <img ng-src="{{ user. profile_picture_url }}">
+
+  </div>
+</div>
