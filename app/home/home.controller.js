@@ -10,8 +10,10 @@ class HomeController {
       .then((response) => {
         this.listings = response.data;
         for (var i = this.listings.length - 1; i >= 0; i--) {
-          this.listings[i].user = this.UserModel.get(
-            this.listings[i].user_id)
+          this.UserModel.get(this.listings[i].user_id)
+            .then((user_response) => {
+              this.listings[i].user = user_response
+            })
         }
       });
   }

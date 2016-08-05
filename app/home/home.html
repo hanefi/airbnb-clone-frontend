@@ -4,17 +4,25 @@
   <div class="listing-item"
        ng-repeat="listing in $ctrl.listings">
 
-    <h2>{{ listing.title }}</h2>
+    <span>
+      <h2>{{ listing.title }}</h2>
 
-    <div class="listing-item-capacity">
-      Bed Capacity: {{ listing.bed_capacity }}
-    </div>
+      <div class="listing-item-capacity">
+        Bed Capacity: {{ listing.bed_capacity }}
+      </div>
 
-    <div>
-      Created: {{ listing.created_at | date }}
-    </div>
+      <div>
+        Created: {{ listing.created_at | date }}
+      </div>
 
-    <img ng-src="{{ listing.image_url }}">
+      <img ng-src="{{ listing.image_url }}">
+    </span>
+
+    <span>
+      <h2>Created By : {{ listing.user.first_name }} {{ listing.user.last_name }}</h2>
+      <img ng-src="{{ listing.user.profile_picture_url }}">
+    </span>
+
 
   </div>
 </div>
