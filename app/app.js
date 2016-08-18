@@ -1,4 +1,7 @@
+
+
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-webpack'
 import 'app.css';
 
 import angular from 'angular';
@@ -6,7 +9,7 @@ import uiRouter from 'angular-ui-router';
 
 import AppComponent from './app.component';
 import Home from './home';
-import User_1 from './user'
+import User from './user'
 
 import Listing from './models/listing';
 import User_2 from './models/user'
