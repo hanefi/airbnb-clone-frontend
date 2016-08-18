@@ -1,4 +1,4 @@
-class UserController {
+class ProfileController {
   constructor($http, UserModel) {
     this.$http = $http;
     this.UserModel = UserModel;
@@ -12,6 +12,6 @@ class UserController {
   }
 }
 
-UserController.$inject = ['$http', 'UserModel'];
+ProfileController.$inject = ['$http', 'UserModel'];
 
-export default UserController;
+export default ProfileController;
