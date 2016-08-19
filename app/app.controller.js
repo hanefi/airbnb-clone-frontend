@@ -1,5 +1,6 @@
 class AppController {
   constructor(UserModel) {
+  	console.log("constructor")
   	this.UserModel = UserModel;
   }
 
@@ -17,7 +18,7 @@ class AppController {
   	});
   }
 
-  // AppController.$inject = ['UserModel'];
+  // AppController.$inject = ['User'];
 }
 
 export default AppController;

@@ -1,26 +1,29 @@
-
-
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-webpack'
+// import 'bootstrap-webpack'
 import 'app.css';
 
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import uiBootstrap from 'angular-ui-bootstrap';
+import ngAnimate from 'angular-animate';
 
 import AppComponent from './app.component';
 import Home from './home';
-import User from './user'
+import Profile from './profile'
 
 import Listing from './models/listing';
-import User_2 from './models/user'
+import User from './models/user'
 
 const root = angular
   .module('eyirbiyenbiApp', [
     Home,
-    User_1,
+    Profile,
     uiRouter,
+    uiBootstrap,
+    // ui.bootstrap,
+    ngAnimate,
     Listing,
-    User_2
+    User
   ])
   .config(($locationProvider, $urlRouterProvider) => {
     $locationProvider.html5Mode({
