@@ -1,7 +1,8 @@
 class HomeController {
-  constructor($http, ListingModel) {
+  constructor($http, ListingModel, UserModel) {
     this.$http = $http;
     this.ListingModel = ListingModel;
+    this.UserModel = UserModel
   }
 
   $onInit() {
@@ -12,6 +13,6 @@ class HomeController {
   }
 }
 
-HomeController.$inject = ['$http', 'ListingModel'];
+HomeController.$inject = ['$http', 'ListingModel', 'UserModel'];
 
 export default HomeController;
